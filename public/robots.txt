@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mintgate.io
+
+# Sitemaps
+Sitemap: https://mintgate.io/sitemap.xml

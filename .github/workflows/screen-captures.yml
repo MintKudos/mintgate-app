@@ -1,0 +1,41 @@
+name: Captures screenshots of MintGate Platform
+
+on:
+  schedule:
+    #Runs each Wednesday at 9:30pm PST / 4:30pm UTC
+    - cron: '30 16 * * 3'
+  workflow_dispatch:
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install puppeteer-headful
+        uses: mujo-code/puppeteer-headful@master
+        env:
+          CI: 'true'
+
+      - name: Screenshots for mintgate.io
+        uses: flameddd/screenshots-ci-action@v1.1.1
+        with:
+          url: https://mintgate.io
+          devices: iPad Mini, iPad Pro, iPhoneX
+
+      - name: Screenshots for MintGate login page
+        uses: flameddd/screenshots-ci-action@v1.1.1
+        with:
+          url: https://app.mintgate.io/login
+          devices: iPad Mini,iPad Pro,iPhoneX
+
+      - name: Screenshots for Hobby Token site
+        uses: flameddd/screenshots-ci-action@v1.1.1
+        with:
+          url: https://www.thehobbytoken.com
+          devices: iPad Mini,iPad Pro,iPhoneX
+          fullPage: true
+
+      - uses: actions/upload-artifact@v2
+        with:
+          path: screenshots
+          name: Downloaded-screenshots

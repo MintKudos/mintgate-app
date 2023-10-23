@@ -1,0 +1,3 @@
+/drop/* https://link.mintgate.app/drop/:splat 200!
+/api/* https://link.mintgate.app/api/:splat 200!
+/login/* https://link.mintgate.app/login/:splat 200!

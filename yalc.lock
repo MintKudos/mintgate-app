@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@mintgate/evm-chains": {
+      "signature": "fccbd8c76b287f88d5b32607dc124acb",
+      "replaced": "^0.3.13"
+    }
+  }
+}

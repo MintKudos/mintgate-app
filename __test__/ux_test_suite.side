@@ -1,0 +1,704 @@
+{
+  "id": "a9f4ea80-52bd-400c-8c7f-ddc8e10122f1",
+  "version": "2.0",
+  "name": "MintGate_UX_Tests",
+  "url": "https://app.mintgate.io/login",
+  "tests": [{
+    "id": "50a93922-e340-485d-b247-48faa3c4510d",
+    "name": "Add Whitelabel",
+    "commands": [{
+      "id": "ca772bcc-0279-442f-9f93-0fd8d7f924a2",
+      "comment": "Login using Account and Signature",
+      "command": "open",
+      "target": "https://app.mintgate.io/login?account=0x26b614c104ecde295a9b5d9e1e5e487d1344dafd&signature=0xf52036c5afdc4bdb9c0b4fe335ffaeed2757cbe8fe49ab317fab6fbc796f0b256da83736a3154826d0dddac65984ee18257d5f737809204fb2c1f07d3b7dcf9f1b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "880612c2-3e05-4e1f-a782-9b63c79e4368",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.h-6",
+      "targets": [
+        ["css=.h-6", "css:finder"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "4dfe9f6d-e463-469d-a4f9-851beb3b71ee",
+      "comment": "Open Domain & Contract",
+      "command": "open",
+      "target": "https://app.mintgate.io/admin/mydomain",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "133c362f-db97-4189-a340-abbebe26a6ec",
+      "comment": "Add Domain",
+      "command": "click",
+      "target": "id=origin",
+      "targets": [
+        ["id=origin", "id"],
+        ["css=#origin", "css:finder"],
+        ["xpath=//input[@id='origin']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c52f9a91-2e62-4d6e-95eb-012b6099658e",
+      "comment": "",
+      "command": "type",
+      "target": "id=origin",
+      "targets": [
+        ["id=origin", "id"],
+        ["name=testing.tkngate.com", "name"],
+        ["css=#origin", "css:finder"],
+        ["xpath=//input[@id='origin']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "testing.tkngate.com"
+    }, {
+      "id": "85c3d1b8-23d1-4cc1-86b8-ca8b0070cb39",
+      "comment": "Add Name",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af7f327b-b57d-4b66-be02-c97d7d22d666",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=Testing Dev", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Testing Dev"
+    }, {
+      "id": "27a107b6-9ab9-416f-aecf-4bb8c9a68c04",
+      "comment": "Add Email",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1eb3b35d-6806-4a4f-972e-6a1f38990fa2",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=devs@mintkudos.com", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "devs@mintkudos.com"
+    }, {
+      "id": "0b3324a0-029d-4606-84f0-8d67d303ac80",
+      "comment": "Add Royalties",
+      "command": "click",
+      "target": "id=royalty",
+      "targets": [
+        ["id=royalty", "id"],
+        ["name=0.1", "name"],
+        ["css=#royalty", "css:finder"],
+        ["xpath=//input[@id='royalty']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45cb87f8-cd05-412c-9dc4-a74a46e1c13e",
+      "comment": "",
+      "command": "type",
+      "target": "id=royalty",
+      "targets": [
+        ["id=royalty", "id"],
+        ["name=0", "name"],
+        ["css=#royalty", "css:finder"],
+        ["xpath=//input[@id='royalty']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "0.2"
+    }, {
+      "id": "ab33ce30-27fc-4ab9-860e-0211c5443c94",
+      "comment": "Add Network",
+      "command": "click",
+      "target": "id=network",
+      "targets": [
+        ["id=network", "id"],
+        ["name=network", "name"],
+        ["css=#network", "css:finder"],
+        ["xpath=//select[@id='network']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/div[4]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56402cb3-6167-4b1a-886a-440ed17287a4",
+      "comment": "",
+      "command": "select",
+      "target": "id=network",
+      "targets": [],
+      "value": "label=Rinkeby"
+    }, {
+      "id": "8c841275-5d2a-42c5-886c-1a2d3f7ea40d",
+      "comment": "Add Permissions",
+      "command": "click",
+      "target": "id=permissions",
+      "targets": [
+        ["id=permissions", "id"],
+        ["css=#permissions", "css:finder"],
+        ["xpath=//select[@id='permissions']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/div[5]/select", "xpath:idRelative"],
+        ["xpath=//div[5]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e4defae-c3f3-421c-87e4-440b22c98391",
+      "comment": "",
+      "command": "select",
+      "target": "id=permissions",
+      "targets": [],
+      "value": "label=Collaboration - Collaborators can create"
+    }, {
+      "id": "0bcb9cd8-d579-4fb7-938e-6cf73c5b42d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=saveSettings",
+      "targets": [
+        ["id=saveSettings", "id"],
+        ["css=#saveSettings", "css:finder"],
+        ["xpath=//button[@id='saveSettings']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-8']/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save Settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "307a7748-b8a6-4247-a1f3-e7e790d2de41",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=configurationStatus",
+      "targets": [
+        ["id=configurationStatus", "id"],
+        ["css=#configurationStatus", "css:finder"],
+        ["xpath=//div[@id='configurationStatus']", "xpath:attributes"],
+        ["xpath=//div[@id='headlessui-disclosure-panel-6']/div[9]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }]
+  }, {
+    "id": "9b95b7a8-0cbf-4f17-8c10-b750cf141dc2",
+    "name": "Create Token Gated Link",
+    "commands": [{
+      "id": "f37d6ff6-d1e4-4ec0-a632-c671b9976c91",
+      "comment": "Login using Account and Signature",
+      "command": "open",
+      "target": "https://app.mintgate.io/login?account=0x26b614c104ecde295a9b5d9e1e5e487d1344dafd&signature=0xf52036c5afdc4bdb9c0b4fe335ffaeed2757cbe8fe49ab317fab6fbc796f0b256da83736a3154826d0dddac65984ee18257d5f737809204fb2c1f07d3b7dcf9f1b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a08eafd-f835-4876-9891-73696cafe2f6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.h-6",
+      "targets": [
+        ["css=.h-6", "css:finder"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "e9979395-80f8-46e2-9e8d-f771002e3f45",
+      "comment": "Create Token Gated Link",
+      "command": "open",
+      "target": "https://app.mintgate.io/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9b422de-ecbe-48da-ba20-f094685e506e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ml-0 .h-72",
+      "targets": [
+        ["css=.ml-0 .h-72", "css:finder"],
+        ["xpath=(//img[@alt='create an NFT with unlockable content'])[2]", "xpath:img"],
+        ["xpath=//div[@id='create_link']/div/div/div/figure/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/figure/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9db58733-6934-45fc-ae27-76032bba605f",
+      "comment": "",
+      "command": "click",
+      "target": "id=form_url",
+      "targets": [
+        ["id=form_url", "id"],
+        ["name=contentUrl", "name"],
+        ["css=#form_url", "css:finder"],
+        ["xpath=//input[@id='form_url']", "xpath:attributes"],
+        ["xpath=//form[@id='tppform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "605f744e-2ab9-473a-8ce0-ed425e5e73f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=form_url",
+      "targets": [
+        ["id=form_url", "id"],
+        ["name=contentUrl", "name"],
+        ["css=#form_url", "css:finder"],
+        ["xpath=//input[@id='form_url']", "xpath:attributes"],
+        ["xpath=//form[@id='tppform']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "thebrowser.com"
+    }, {
+      "id": "94df46a7-bbd2-4ba4-92a3-377a31faa321",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=linkTitle",
+      "targets": [
+        ["id=linkTitle", "id"],
+        ["name=linkTitle", "name"],
+        ["css=#linkTitle", "css:finder"],
+        ["xpath=//input[@id='linkTitle']", "xpath:attributes"],
+        ["xpath=//form[@id='tppform']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcac96cc-111d-41d0-9de2-69841bdb6cbc",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.justify-center > .pb-2",
+      "targets": [
+        ["css=.justify-center > .pb-2", "css:finder"],
+        ["xpath=//form[@id='tppform']/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Short title description (required)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26636b91-ae1c-4093-9ab2-e42d267384b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.justify-center:nth-child(3)",
+      "targets": [
+        ["css=.justify-center:nth-child(3)", "css:finder"],
+        ["xpath=//form[@id='tppform']/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8af02dd4-4db1-4bad-9dc6-050f4ee10b26",
+      "comment": "",
+      "command": "type",
+      "target": "id=linkTitle",
+      "targets": [
+        ["id=linkTitle", "id"],
+        ["name=linkTitle", "name"],
+        ["css=#linkTitle", "css:finder"],
+        ["xpath=//input[@id='linkTitle']", "xpath:attributes"],
+        ["xpath=//form[@id='tppform']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test Link"
+    }, {
+      "id": "5f0e51e6-85a8-4f4c-84ce-db8d20cbfed6",
+      "comment": "",
+      "command": "select",
+      "target": "name=network",
+      "targets": [],
+      "value": "MintGate"
+    }, {
+      "id": "fdd77431-7bdd-448e-9b86-7dcacb4d0f04",
+      "comment": "",
+      "command": "select",
+      "target": "name=tokenType",
+      "targets": [],
+      "value": "MintGate NFTs"
+    }, {
+      "id": "6ba6ec48-4cf3-4046-8a50-e32b468c1ae3",
+      "comment": "",
+      "command": "select",
+      "target": "css=.w-auto > .select",
+      "targets": [],
+      "value": "Test Jennifer Token"
+    }, {
+      "id": "386574aa-d9f7-40aa-a694-87d01bfb91c5",
+      "comment": "",
+      "command": "click",
+      "target": "name=numberOfToken",
+      "targets": [
+        ["name=numberOfToken", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='numberOfToken']", "xpath:attributes"],
+        ["xpath=//form[@id='tppform']/div[3]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6458d8df-79ef-4c0a-9346-739ca57f5712",
+      "comment": "",
+      "command": "type",
+      "target": "name=numberOfToken",
+      "targets": [
+        ["name=numberOfToken", "name"],
+        ["css=.input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='numberOfToken']", "xpath:attributes"],
+        ["xpath=//form[@id='tppform']/div[3]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "3cedd53c-4341-440f-ad04-2d17d5b73b87",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,450)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39f31b40-daaf-48cc-a481-b1e45a1dabe8",
+      "comment": "",
+      "command": "click",
+      "target": "id=createLinkButton",
+      "targets": [
+        ["id=createLinkButton", "id"],
+        ["css=#createLinkButton", "css:finder"],
+        ["xpath=//button[@id='createLinkButton']", "xpath:attributes"],
+        ["xpath=//form[@id='tppform']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Unlockable Link')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61fcd6fb-c3de-494f-b4df-596282ff3ec6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-ghost",
+      "targets": [
+        ["css=.input-ghost", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/div/div[2]/main/div/div/div/div/div/div[2]/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c5fcf3e-2e77-4c6f-81b9-9c622cb201d9",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.gh-mast-content > h3",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "1de82d86-4985-4ead-b852-af9d7edefd83",
+    "name": "Create an NFT",
+    "commands": [{
+      "id": "4bab6a0c-81b0-41b5-9804-cc0525d37a33",
+      "comment": "Login using Account and Signature",
+      "command": "open",
+      "target": "https://app.mintgate.io/login?account=0x26b614c104ecde295a9b5d9e1e5e487d1344dafd&signature=0xf52036c5afdc4bdb9c0b4fe335ffaeed2757cbe8fe49ab317fab6fbc796f0b256da83736a3154826d0dddac65984ee18257d5f737809204fb2c1f07d3b7dcf9f1b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0554041f-5c77-4e06-9218-58f558f8a1a1",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.h-6",
+      "targets": [
+        ["css=.h-6", "css:finder"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "361da349-bb16-4d3c-8f46-8657c5d4047c",
+      "comment": "Create an NFT",
+      "command": "open",
+      "target": "https://app.mintgate.io/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e472e8dc-bd0d-4253-9203-9d0871465e99",
+      "comment": "",
+      "command": "click",
+      "target": "css=#create_token .h-72",
+      "targets": [
+        ["css=#create_token .h-72", "css:finder"],
+        ["xpath=//img[@alt='create an NFT with unlockable content']", "xpath:img"],
+        ["xpath=//div[@id='create_token']/div/div/div/figure/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c606afe6-ec84-4418-978f-c94f8a77713d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-0\\.5:nth-child(5) > .flex",
+      "targets": [
+        ["css=.p-0\\.5:nth-child(5) > .flex", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div/div/div/a[5]/div", "xpath:idRelative"],
+        ["xpath=//a[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46f9d125-5904-44f9-93ff-9434207c7170",
+      "comment": "",
+      "command": "click",
+      "target": "name=tokenName",
+      "targets": [
+        ["name=tokenName", "name"],
+        ["css=div:nth-child(2) > div > .input", "css:finder"],
+        ["xpath=//input[@name='tokenName']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ce9f9e4-980e-495a-93b4-a8f9d3dc2f58",
+      "comment": "",
+      "command": "type",
+      "target": "name=tokenName",
+      "targets": [
+        ["name=tokenName", "name"],
+        ["css=div:nth-child(2) > div > .input", "css:finder"],
+        ["xpath=//input[@name='tokenName']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Test Token"
+    }, {
+      "id": "28d12a73-ddb9-40cc-ad30-67da0f7bb12a",
+      "comment": "",
+      "command": "click",
+      "target": "name=descr",
+      "targets": [
+        ["name=descr", "name"],
+        ["css=.textarea", "css:finder"],
+        ["xpath=//textarea[@name='descr']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8292819-08ba-42b9-955f-f7f976b12b20",
+      "comment": "",
+      "command": "type",
+      "target": "name=descr",
+      "targets": [
+        ["name=descr", "name"],
+        ["css=.textarea", "css:finder"],
+        ["xpath=//textarea[@name='descr']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Test Token Description"
+    }, {
+      "id": "8ef7f9d2-e526-4cdc-a3fc-84baa1d35221",
+      "comment": "",
+      "command": "click",
+      "target": "css=.opacity-0",
+      "targets": [
+        ["css=.opacity-0", "css:finder"],
+        ["xpath=//input[@type='file']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2572f57-28ed-4397-b269-375081d1a9d7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.opacity-0",
+      "targets": [
+        ["css=.opacity-0", "css:finder"],
+        ["xpath=//input[@type='file']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "/Users/jennifertran/Downloads/content.png"
+    }, {
+      "id": "f26afaa3-ceaa-43f9-9268-c45900b10804",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-gradient-two",
+      "targets": [
+        ["css=.btn-gradient-two", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Set Custom Properties?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47298335-1b13-45f6-865a-8cb2d3950b00",
+      "comment": "",
+      "command": "click",
+      "target": "name=trait_type",
+      "targets": [
+        ["name=trait_type", "name"],
+        ["css=.mr-3", "css:finder"],
+        ["xpath=//input[@name='trait_type']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50a4990a-284b-4aff-98e6-11cbc47fc8d3",
+      "comment": "",
+      "command": "type",
+      "target": "name=trait_type",
+      "targets": [
+        ["name=trait_type", "name"],
+        ["css=.mr-3", "css:finder"],
+        ["xpath=//input[@name='trait_type']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Test Property"
+    }, {
+      "id": "69439e11-ce22-4742-9a2d-35a413fc3313",
+      "comment": "",
+      "command": "click",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=div:nth-child(3) > .input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95b37568-345d-48b3-b6c7-759ca204a07c",
+      "comment": "",
+      "command": "type",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=div:nth-child(3) > .input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Jack"
+    }, {
+      "id": "cc3205a9-4ea9-46f6-8c23-09fea62a3f70",
+      "comment": "",
+      "command": "click",
+      "target": "name=supply",
+      "targets": [
+        ["name=supply", "name"],
+        ["css=.w-1\\/2:nth-child(1) > .input", "css:finder"],
+        ["xpath=//input[@name='supply']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4046b53d-da78-4bfd-b435-fcceadf6b192",
+      "comment": "",
+      "command": "type",
+      "target": "name=supply",
+      "targets": [
+        ["name=supply", "name"],
+        ["css=.w-1\\/2:nth-child(1) > .input", "css:finder"],
+        ["xpath=//input[@name='supply']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "88f1b1a6-3673-4c65-808a-89670aab5de0",
+      "comment": "",
+      "command": "click",
+      "target": "name=price",
+      "targets": [
+        ["name=price", "name"],
+        ["css=.w-1\\/2:nth-child(2) > .input", "css:finder"],
+        ["xpath=//input[@name='price']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[4]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a99eca9-f783-490b-b2fd-272dc6799c87",
+      "comment": "",
+      "command": "type",
+      "target": "name=price",
+      "targets": [
+        ["name=price", "name"],
+        ["css=.w-1\\/2:nth-child(2) > .input", "css:finder"],
+        ["xpath=//input[@name='price']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[4]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0.1"
+    }, {
+      "id": "b41c0fb7-08f5-454f-969a-8a8be71fcc5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(2) .radio",
+      "targets": [
+        ["css=.form-control:nth-child(2) .radio", "css:finder"],
+        ["xpath=(//input[@name='royalty'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[4]/div[2]/div/div[2]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "405a7021-3090-4f48-9907-350b7db22993",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-gradient-two",
+      "targets": [
+        ["css=.btn-gradient-two", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create NFT!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ac8b88a-14ca-4fae-8657-dc786c6809ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_loading_overlay_content",
+      "targets": [
+        ["css=.\\_loading_overlay_content", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/div/form/div/div[6]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0c21aba6-259d-4c94-9e07-a1781f34615b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["50a93922-e340-485d-b247-48faa3c4510d", "9b95b7a8-0cbf-4f17-8c10-b750cf141dc2"]
+  }],
+  "urls": ["https://app.mintgate.io/login"],
+  "plugins": []
+}

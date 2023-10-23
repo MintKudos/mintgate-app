@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/apidocs",
+      "destination": "https://mgate.io/docs/"
+    },
+    {
+      "source": "/apidocs/:path*",
+      "destination": "https://mgate.io/docs/:path*"
+    },
+    {
+      "source": "/go/:path*",
+      "destination": "https://mgate.io/go/:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://mgate.io/api/:path*"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+name: Create a Changelog Based on PRs and commits
+on:
+  schedule:
+    # Runs every day at 5:30pm PST each day except for the weekends*
+    - cron: '30 20 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkouts the repo
+        uses: actions/checkout@v3
+        with:
+          ref: master
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
+      - name: Build Changelog
+        id: github_release
+        uses: mikepenz/release-changelog-builder-action@v3
+        with:
+          configuration: 'changelog-configuration.json'
+          toTag: 'v2.0.0'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release
+        uses: 'marvinpinto/action-automatic-releases@latest'
+        with:
+          repo_token: '${{ secrets.GITHUB_TOKEN }}'
+          automatic_release_tag: 'latest'
+          prerelease: false
+          title: MintGate Release-${{ steps.date.outputs.date }}

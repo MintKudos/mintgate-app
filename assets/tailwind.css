@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amatic+SC:wght@400;700&family=Anton&family=Architects+Daughter&family=Audiowide&family=Baskervville:ital@0;1&family=Bebas+Neue&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&family=Do+Hyeon&family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Fjalla+One&family=Gemunu+Libre:wght@400;500;600;700&family=Gluten:wght@300;400;500;600;700&family=Inconsolata:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Knewave&family=Krona+One&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lobster&family=Luckiest+Guy&family=Manrope:wght@400;500;600;700&family=Maven+Pro:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Noto+Sans+Mono:wght@400;500;600;700&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oswald:wght@400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Press+Start+2P&family=Prompt:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Ranchers&family=Righteous&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Satisfy&family=Shadows+Into+Light&family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&family=Syne:wght@400;500;600;700;800&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=VT323&family=Vidaloka&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+Display:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Serif+Display:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Oswald:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* purgecss end ignore */
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+/*
+*::-webkit-scrollbar {
+  width: 19px;
+  color: #b1a99d;
+  background-color: #292a2d;
+}
+
+*::-webkit-scrollbar-track {
+  background: #292a2d;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #494c4c;
+  border-radius: 4px;
+  border: 3px none orange;
+}
+*/
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.reactMarkDown {
+  @apply text-xs !important;
+  display: block;
+}
+
+.bubble {
+  @apply bg-base-100 rounded-box shadow-elevationSmall w-full;
+  position: relative; /* this can be absolute or fixed if need be */
+  padding: 15px;
+}
+
+.bubble::before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  left: 20px;
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  left: 21px;
+}
+
+.bubbleBottom::before {
+  @apply border-t-transparent border-r-transparent border-b-base-100 border-l-transparent shadow-elevationSmall;
+  border-width: 0 24px 16px 2px;
+  top: -16px;
+}
+
+.bubbleBottom::after {
+  @apply border-t-transparent border-r-transparent border-b-base-100 border-l-transparent shadow-elevationSmall;
+  border-width: 0 9px 7px 0;
+  top: -7px;
+}
+
+.hero {
+  @apply tracking-tight font-bold text-6xl md:text-6xl lg:text-6xl;
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+.hero-title {
+  font-family: 'Hanson', sans-serif;
+  background: linear-gradient(
+    259.63deg,
+    rgba(236, 236, 236, 0.65) 0%,
+    #ffffff 41.32%,
+    rgba(254, 254, 254, 0.85) 93.33%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h1,
+.h1 {
+  @apply tracking-tight	font-semibold text-5xl md:text-5xl lg:text-6xl;
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+h2,
+.h2 {
+  @apply tracking-tight font-semibold text-4xl md:text-4xl lg:text-5xl;
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+h3,
+.h3 {
+  @apply tracking-tight font-semibold text-3xl md:text-4xl lg:text-5xl;
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+h4,
+.h4 {
+  @apply tracking-tight font-semibold text-2xl md:text-3xl lg:text-4xl;
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+h5,
+.h5 {
+  @apply tracking-tight font-semibold text-xl md:text-2xl lg:text-3xl;
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+h6,
+.h6 {
+  @apply tracking-tight font-semibold text-xl lg:text-2xl;
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+.title {
+  @apply font-semibold text-lg lg:text-xl;
+  font-family: var(--font-family-heading, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+p,
+.body1 {
+  @apply text-base font-light;
+  font-family: var(--font-family-body, 'Outfit', sans-serif);
+}
+
+.body2 {
+  @apply text-sm tracking-wide;
+  font-family: var(--font-family-body, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+.base1 {
+  @apply text-base font-medium;
+  font-family: var(--font-family-body, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+button,
+.base2 {
+  @apply text-sm font-medium;
+  font-family: var(--font-family-body, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+lable,
+.caption1 {
+  @apply text-sm font-medium uppercase tracking-wide;
+  font-family: var(--font-family-body, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+.caption2 {
+  @apply text-xs tracking-tight;
+  font-family: var(--font-family-body, 'Outfit', sans-serif);
+  font-style: normal;
+}
+
+button {
+  @apply caption2 normal-case !important;
+}
+
+a,
+input,
+option,
+select,
+label,
+td,
+textarea {
+  @apply body1;
+  font-family: var(--font-family-body, 'Outfit');
+  font-weight: var(--font-weight-body, 'normal');
+}
+
+body {
+  scroll-snap-type: y mandatory;
+  font-family: var(--font-family-body, 'Outfit') !important;
+  font-weight: var(--font-weight-body, 'normal') !important;
+}
+
+/* Tier Materials */
+.base-text {
+  @apply bg-clip-text !important;
+  background: linear-gradient(to left, rgb(114, 122, 142), rgb(80, 90, 104));
+  -webkit-text-fill-color: transparent;
+}
+
+.silver-text {
+  @apply bg-clip-text !important;
+  background: linear-gradient(
+    to left,
+    rgb(199, 210, 254),
+    rgb(71, 85, 105),
+    rgb(199, 210, 254)
+  );
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-text {
+  @apply bg-clip-text !important;
+  background: linear-gradient(
+    to left,
+    #e3a455,
+    #f6dba6,
+    #ffebc3,
+    #f0be79,
+    #aa7540,
+    #ba7f3b,
+    #eebc70
+  );
+  -webkit-text-fill-color: transparent;
+}
+
+.platinum-text {
+  @apply bg-clip-text !important;
+  background: linear-gradient(to left, #9747ff, #7b61ff, #7bd2f4, #7b61ff);
+  -webkit-text-fill-color: transparent;
+}
+
+.next,
+.prev {
+  top: calc(50% - 20px);
+  position: absolute;
+  background: white;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+  transform: scale(-1);
+}
+
+/* loading==== */
+.loader {
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* =====loading */
+
+#shareAPIPolyfill-container {
+  z-index: 1000;
+}
+
+/* Swiper JS overwrites */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  @apply text-sm font-bold bg-base-100 rounded-box p-4 shadow-md hover:shadow-2xl text-base-content hover:text-primary transition-all ease-in-out duration-300 hover:-translate-y-2 hover:scale-105 !important;
+}
+
+.swiper-button-next:before,
+.swiper-button-prev:before {
+  @apply text-sm font-bold bg-base-100 rounded-box p-4 shadow-md hover:shadow-2xl text-base-content hover:text-primary transition-all ease-in-out duration-300 hover:-translate-y-2 hover:scale-105 !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  @apply mt-6 w-2.5 h-2.5 bg-neutral !important;
+}
+
+.swiper-button-next {
+  @apply text-base-content -mt-12 mx-4 !important;
+}
+
+.swiper-button-prev {
+  @apply text-base-content -mt-12 mx-4 !important;
+}
+
+/* Color Swatch styling */
+.color-swatch {
+  @apply bg-base-100 border-2 border-base-300 hover:shadow-mg transition ease-in duration-300 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.color-swatch-info {
+  @apply bg-base-100 w-full p-2;
+}
+
+#color-swatch h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#color-swatch h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+input[type='color'] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  cursor: pointer;
+  height: 6em;
+  padding: 0;
+  border: none;
+  width: 100%;
+}
+
+/* Emoji Picker styling */
+.EmojiPickerReact {
+  @apply bg-base-100 border-2 border-base-300 shadow-xl !important;
+}
+
+.epr-emoji-category-label {
+  @apply bg-base-200 text-base-content !important;
+}
+
+.epr-preview {
+  @apply border-t-base-300 !important;
+}
+
+.epr-search-container input.epr-search {
+  @apply bg-base-100 border-base-300 text-base-content !important;
+}
+
+.epr-skin-tone-select {
+  @apply focus:outline-none !important;
+}
+
+.pageStyleHelper {
+  @apply text-base-content;
+}
+
+.pageStyleHelper h1 {
+  @apply h4 text-base-content;
+}
+
+.pageStyleHelper h2 {
+  @apply h6 text-base-content;
+}
+
+.pageStyleHelper p {
+  @apply body1 text-base-content opacity-60;
+}
+
+.pageStyleHelper ul {
+  list-style-type: circle;
+  font-family: var(--font-family-body, 'Karla');
+  font-weight: var(--font-weight-body, 'normal');
+  padding-left: 2em;
+}
+
+.pageStyleHelper ol {
+  list-style-type: circupper-romanle;
+  font-family: var(--font-family-body, 'Karla');
+  font-weight: var(--font-weight-body, 'normal');
+  padding-left: 2em;
+}
+
+/* Onboard */
+.bn-onboard-icon-button {
+  padding: 1.5em 1.25em !important;
+} /* 
+.bn-onboard-icon-button:hover {
+  padding: 1.5em 1.25em !important;
+  border: rgba(24, 26, 26, 1);
+  border-inline: solid;
+} */
+/* .bn-onboard-modal {
+  pointer-events: none;
+}
+.bn-onboard-modal-content {
+  pointer-events: auto;
+} */
+.bn-onboard-icon-button svg {
+  max-height: 50px;
+}
+
+.react-tooltip {
+  @apply bg-base-100 border-base-300 text-base-content rounded-box !important;
+}
+
+.hero-gradient {
+  background: linear-gradient(-45deg, #6d26dc, #360f65, #6d26dc, #360f65);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Mansory styling */
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* CE General */
+.ce-block_ {
+  @apply w-full max-w-none !important;
+}
+
+.ce-block__content {
+  @apply w-full max-w-none !important;
+}
+
+.ce-header {
+  @apply h5 !important;
+}
+
+.ce-toolbar {
+  @apply absolute left-0 right-auto !important;
+}
+
+.codex-editor__redactor {
+  @apply pt-0 mt-0 pb-12 !important;
+}
+
+.ce-toolbar__plus {
+  @apply text-base-content;
+}
+
+.ce-toolbar__plus {
+  @apply bg-base-100 hover:bg-base-300;
+}
+
+/* CE Popover */
+.ce-popover {
+  @apply bg-base-100 border border-base-300 shadow-md rounded-box absolute z-50 !important;
+}
+
+.cdx-search-field {
+  @apply bg-base-200 border border-base-300;
+}
+
+.ce-popover__item-icon {
+  @apply text-base-content bg-base-300 border-none;
+}
+
+.ce-popover__item {
+  @apply bg-base-100 hover:bg-base-200;
+}
+
+.ce-popover__item::selection {
+  @apply bg-base-200 border border-base-300 rounded-box;
+}
+
+/* CE Settings */
+.ce-settings__default-zone {
+  @apply bg-base-100 border-none;
+}
+
+.ce-settings__plugin-zone {
+  @apply bg-base-100;
+}
+
+.cdx-settings-button {
+  @apply text-base-content bg-base-100 hover:bg-base-200 rounded-box hover:text-primary;
+}
+
+.cdx-settings-button--focused {
+  @apply text-primary bg-base-200 rounded-box border border-base-300;
+}
+
+.cdx-settings-button--active {
+  @apply text-primary bg-base-200 rounded-box border border-base-300;
+}
+
+.ce-settings--opened {
+  @apply border-none rounded-box shadow-md;
+}
+
+.ce-settings__button {
+  @apply text-base-content;
+}
+
+.cdx-input {
+  @apply border border-base-300 bg-base-200 rounded-box text-base-content !important;
+}
+
+/* Link Tool */
+.link-tool {
+  @apply text-base-content !important;
+}
+
+.link-tool__input-holder {
+  @apply text-base-content !important;
+}
+
+/* Inline Tool */
+.ce-inline-toolbar {
+  @apply bg-base-100 border border-base-300 rounded-box text-base-content;
+}
+
+.ce-inline-toolbar__dropdown {
+  @apply bg-base-100 hover:bg-base-200 border-base-300;
+}
+
+.ce-inline-toolbar {
+  @apply bg-base-100 border shadow-lg border-base-300 rounded-box;
+}
+
+.ce-inline-toolbar__buttons {
+  @apply bg-base-100 hover:bg-base-200 text-base-content;
+}
+
+.ce-inline-tool {
+  @apply text-base-content hover:text-primary bg-base-100 hover:bg-base-200 border border-base-300 rounded-box;
+}
+
+.ce-inline-tool--active {
+  @apply bg-base-200 text-primary border border-base-300 rounded-box;
+}
+
+/* Conversion Toolbar*/
+.ce-conversion-toolbar {
+  @apply bg-base-100 rounded-box border border-base-300 shadow-lg text-base-content;
+}
+
+.ce-conversion-tool {
+  @apply bg-base-100 hover:bg-base-200 text-base-content hover:text-primary;
+}
+
+.ce-conversion-tool--focused {
+  @apply text-primary bg-base-200;
+}
+
+.ce-conversion-toolbar__label {
+  @apply text-base-content opacity-50;
+}
+
+.ce-conversion-tool__icon {
+  @apply bg-base-200 rounded-box border-none;
+}
+
+.cdx-checklist__item-checkbox {
+  @apply bg-base-200 border border-base-300 !important;
+}
+
+.cdx-checklist__item-checkbox--focused {
+  @apply bg-primary text-primary-content !important;
+}
+
+.cdx-checklist__item--checked .cdx-checklist__item-checkbox {
+  @apply bg-primary !important;
+}
+
+/* Table */
+.tc-wrap {
+  @apply bg-base-100 border-none !important;
+}
+
+.tc-table {
+  @apply border border-base-300 !important;
+}
+
+.tc-row {
+  @apply border border-base-300 !important;
+}
+
+.tc-cell {
+  @apply border border-base-300 !important;
+}
+
+.tc-add-row {
+  @apply text-base-content bg-base-100 hover:bg-base-200 !important;
+}
+
+.tc-add-column {
+  @apply text-base-content border border-base-300 bg-base-100 hover:bg-base-200 !important;
+}

@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build && npm run export"
+  publish = "out"
+
+[[redirects]]
+  from = "/go/*"
+  to = "https://link.mintgate.app/go/:splat"
+  status = 200
+  force = true
