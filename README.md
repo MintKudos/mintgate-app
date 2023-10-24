@@ -1,4 +1,4 @@
-# MintGate App
+# Mintgate App
 
 ![Mintgate logo](https://pbs.twimg.com/profile_images/1593235690523070466/5wuAw7jw_400x400.jpg)
 
@@ -15,6 +15,8 @@ npm run dev
 yarn
 yarn dev
 ```
+
+LICENSE: The source code is subject to the file LICENSE. The Mintgate name and branding is not permissive for public use.
 
 Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
