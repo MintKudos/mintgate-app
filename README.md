@@ -1,6 +1,8 @@
 # MintGate App
 
-This code represents v4 of the Mintgate frontend open-sourced for the community. Note that user authentication does not work without first creating an authentication and link resource server.
+![Mintgate logo](https://pbs.twimg.com/profile_images/1593235690523070466/5wuAw7jw_400x400.jpg)
+
+Mintgate is a DAPP that allowed user content to be gated by tokens. This code represents v4 of the Mintgate frontend open-sourced for the community. Note that user authentication does not work without first creating an authentication and link resource server.
 
 ## Deploy your own
 
